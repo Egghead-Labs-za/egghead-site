@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 40 590 870" fill="none" stroke="#141414" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+  <style>@media (prefers-color-scheme: dark) { svg { stroke: #F2F2F2; } }</style>
+  <path class="cap" d="M120 425 C64 345 46 235 96 150 C150 80 240 62 320 82 C380 98 420 128 447 168 L430 236 L357 240 L332 316 L250 320 L225 404 L150 404 Z"/>
+  <path d="M132 470 L190 545 L293 505 L365 600 L452 540 L503 618 L572 590 C602 690 550 852 385 878 C228 900 88 812 80 655 C76 580 98 515 132 470 Z"/>
+</svg>

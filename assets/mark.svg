@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 48" width="40" height="48"><defs><clipPath id="e"><path d="M20 3C30 3 37 18 37 30c0 9.4-7.6 15-17 15S3 39.4 3 30C3 18 10 3 20 3z"/></clipPath></defs><rect x="0" y="29" width="40" height="20" fill="#F4AC4C" clip-path="url(#e)"/><path d="M20 3C30 3 37 18 37 30c0 9.4-7.6 15-17 15S3 39.4 3 30C3 18 10 3 20 3z" fill="none" stroke="#14171F" stroke-width="3"/><path d="M4 29h32" stroke="#14171F" stroke-width="3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 50 890 845" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+  <path class="cap" d="M120 425 C64 345 46 235 96 150 C150 80 240 62 320 82 C380 98 420 128 447 168 L430 236 L357 240 L332 316 L250 320 L225 404 L150 404 Z"/>
+  <g class="body">
+    <path d="M132 470 L190 545 L293 505 L365 600 L452 540 L503 618 L572 590 C602 690 550 852 385 878 C228 900 88 812 80 655 C76 580 98 515 132 470 Z"/>
+    <path d="M142 592 C132 680 170 780 262 826"/>
+    <g class="bits" fill="currentColor" stroke="none" font-family="Outfit, system-ui, sans-serif" font-weight="600" font-size="78" lengthAdjust="spacing">
+      <text x="430" y="327" textLength="186">0110</text>
+      <text x="383" y="402" textLength="183">1010</text>
+      <text x="285" y="472" textLength="186">1100</text>
+    </g>
+    <path class="gear" d="M707 318 L722 314 L723 290 L747 290 L748 314 L763 318 L776 326 L794 309 L811 326 L794 344 L802 357 L806 372 L830 373 L830 397 L806 398 L802 413 L794 426 L811 444 L794 461 L776 444 L763 452 L748 456 L747 480 L723 480 L722 456 L707 452 L694 444 L676 461 L659 444 L676 426 L668 413 L664 398 L640 397 L640 373 L664 372 L668 357 L676 344 L659 326 L676 309 L694 326 Z M773 385 A38 38 0 1 0 697 385 A38 38 0 1 0 773 385 Z" fill="currentColor" fill-rule="evenodd" stroke="none"/>
+    <path d="M508 446 H612 L722 556 L730 636 L756 660 H876"/><circle cx="897" cy="660" r="18"/>
+    <path d="M497 578 L545 512 H600 L660 578 L667 680 L790 802"/><circle cx="812" cy="824" r="18"/>
+  </g>
+</svg>

@@ -1,81 +1,65 @@
-/* Egghead Labs company site. Shares the Swotty site's Lexend type system and
-   neutrals; the company colour is ink with a yolk accent (Swotty's warm tone).
-   Teal stays with Swotty. */
-@font-face{font-family:"Lexend";src:url("assets/fonts/Lexend-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
-@font-face{font-family:"Lexend";src:url("assets/fonts/Lexend-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap}
-@font-face{font-family:"Lexend";src:url("assets/fonts/Lexend-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
-:root{
-  --bg:#F7F8FA;--surface:#FFFFFF;--surface-2:#F4F6F9;
-  --ink:#14171F;--ink-2:#59616F;--line:#E7EAEF;--edge:#DFE3EA;
-  --yolk:#F4AC4C;--yolk-weak:#FDF0DC;--yolk-ink:#7A5405;
-  --r-card:18px;--r-btn:14px;--wrap:1160px;--gutter:clamp(20px,5vw,40px);
+@font-face {
+  font-family: "Outfit"; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url("assets/fonts/outfit-latin-400-600.woff2") format("woff2");
 }
-*{box-sizing:border-box}
-html{font-family:"Lexend",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;font-size:1.0625rem;line-height:1.65}
-p{margin:0 0 1em}
-h1,h2,h3{margin:0;line-height:1.15;font-weight:600;letter-spacing:-.01em}
-a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:1px}
-a:hover{text-decoration-thickness:2px}
-a:focus-visible,main:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px;box-shadow:0 0 0 6px var(--yolk)}
-main:focus{outline:none}
-.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
-
-.skip-link{position:absolute;left:12px;top:12px;z-index:10;display:inline-flex;align-items:center;min-height:48px;padding:0 18px;background:var(--ink);color:#fff;font-weight:600;border-radius:var(--r-btn);transform:translateY(-200%)}
-.skip-link:focus{transform:none}
-
-.site-header{background:var(--surface);border-bottom:1px solid var(--line)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px}
-.wordmark{display:inline-flex;align-items:center;min-height:48px;color:var(--ink)}
-.wordmark svg{display:block;width:clamp(160px,44vw,200px);height:auto}
-.header-link{display:inline-flex;align-items:center;min-height:48px;padding:0 14px;margin-right:-14px;border-radius:10px;font-weight:500;font-size:.9375rem;color:var(--ink-2);text-decoration:none}
-.header-link:hover{background:var(--surface-2);color:var(--ink)}
-
-.hero{padding-top:clamp(48px,10vw,120px);padding-bottom:clamp(40px,7vw,80px)}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.875rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--yolk-ink);margin-bottom:20px}
-.eyebrow::before{content:"";width:28px;height:3px;border-radius:2px;background:var(--yolk)}
-.hero h1{font-size:clamp(2.375rem,6.6vw,4.25rem);line-height:1.06;letter-spacing:-.035em;font-weight:700;max-width:17ch;margin-bottom:24px}
-.hero-mark{display:none}
-.hero-sub{font-size:clamp(1.125rem,2.2vw,1.375rem);line-height:1.55;color:var(--ink-2);max-width:40ch;margin:0}
-
-.products{padding-bottom:clamp(56px,8vw,96px)}
-.products h2{padding-top:clamp(40px,6vw,64px);border-top:1px solid var(--line)}
-.products h2,.contact h2{font-size:.875rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);margin-bottom:24px}
-.product-list{list-style:none;margin:0;padding:0;display:grid;gap:16px}
-.product{background:var(--surface);border:1px solid var(--edge);border-radius:var(--r-card);padding:24px 24px 20px;display:flex;flex-direction:column}
-.product h3{font-size:1.75rem;font-weight:700;letter-spacing:-.02em;margin:16px 0 10px}
-.product p{color:var(--ink-2);margin:0 0 12px;max-width:42ch}
-.product .note{color:var(--ink);font-weight:500;font-size:.9375rem;margin-top:auto;padding-top:12px;border-top:1px solid var(--line);margin-bottom:0}
-.status{display:inline-flex;align-self:flex-start;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--edge);font-size:.8125rem;font-weight:600;line-height:1.35;color:var(--ink-2)!important;margin:0!important}
-.dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--ink-2)}
-.status-soon{background:var(--yolk-weak);border-color:#F3D6A6;color:var(--yolk-ink)!important}
-.status-soon .dot{background:var(--yolk)}
-.text-link{display:inline-flex;align-items:center;gap:6px;min-height:48px;margin-top:4px;margin-bottom:-8px;font-weight:600;align-self:flex-start}
-.text-link::after{content:"\2192";transition:transform .15s}
-.text-link:hover::after{transform:translateX(3px)}
-
-.contact{padding-bottom:clamp(64px,9vw,112px)}
-.contact>*{max-width:60ch}
-.contact p{color:var(--ink-2)}
-.email{display:inline-flex;align-items:center;min-height:48px;font-size:clamp(1.375rem,4.4vw,2.25rem);font-weight:600;letter-spacing:-.02em;text-decoration:underline;text-decoration-color:var(--yolk);text-decoration-thickness:3px;text-underline-offset:8px;overflow-wrap:anywhere}
-.email:hover{text-decoration-thickness:5px}
-
-.site-footer{background:var(--surface);border-top:1px solid var(--line);color:var(--ink-2);font-size:.9375rem}
-.footer-inner{padding-top:28px;padding-bottom:28px;display:grid;gap:4px}
-.footer-inner p{margin:0}
-.site-footer nav a{display:inline-flex;align-items:center;min-height:48px;color:var(--ink);font-weight:500}
-.legal{font-size:.8125rem}
-
-@media (min-width:900px){
-  .hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:64px;align-items:center}
-  .hero-mark{display:grid;place-items:center;aspect-ratio:1;background:var(--yolk-weak);border:1px solid #F3D6A6;border-radius:var(--r-card);color:var(--ink)}
-  .hero-mark svg{width:46%;height:auto}
-  .product-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-  .product{padding:28px 28px 24px;min-height:320px}
-  .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);column-gap:64px;align-items:baseline}
-  .contact h2{grid-row:1/3}
-  .contact p,.contact .email{grid-column:2}
-  .footer-inner{grid-template-columns:auto auto 1fr;column-gap:32px;align-items:center}
-  .legal{justify-self:end}
+:root {
+  --ground: #F6F6F4;   /* neutral near-white, no warm cast */
+  --ink: #141414;      /* text and mark */
+  --quiet: #5E5E5C;    /* secondary text */
+  --line: #8A8A88;     /* the trace rule only (non-text, 3:1+) */
+  color-scheme: light dark;
 }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #111111; --ink: #F2F2F2; --quiet: #A6A6A4; --line: #7A7A78; }
+}
+* { box-sizing: border-box; margin: 0; }
+html, body { background: var(--ground); }
+body {
+  color: var(--ink);
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100svh;
+  display: flex; flex-direction: column;
+}
+main {
+  flex: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: clamp(3rem, 10vh, 7rem) 1.25rem 2rem;
+  text-align: center;
+}
+
+/* The adopted mark, one stroke weight, drawn in the text colour. */
+.lockup { display: flex; flex-direction: column; align-items: center; }
+.mark { width: min(280px, 62vw); height: auto; color: var(--ink); overflow: visible; }
+h1 {
+  margin-top: .75rem;
+  font-size: clamp(2.5rem, 2rem + 2.2vw, 3.5rem);
+  font-weight: 600; line-height: 1; letter-spacing: -0.03em;
+}
+.labs { font-weight: 400; color: var(--quiet); letter-spacing: -0.01em; }
+
+.soon {
+  margin-top: 2.75rem;
+  font-size: 1.125rem; line-height: 1.5; color: var(--quiet); text-wrap: balance;
+}
+.trace { display: block; width: 96px; height: auto; margin: 0 auto 1rem; color: var(--line); }
+.lead { color: var(--ink); }
+
+.fact { margin-top: 2.5rem; font-size: 1.125rem; max-width: 42ch; line-height: 1.4; text-wrap: balance; }
+.mail { margin-top: .75rem; font-size: 1.125rem; }
+a {
+  color: var(--ink);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .25em;
+  display: inline-flex; align-items: center; min-height: 48px; padding-inline: .25rem;
+  overflow-wrap: anywhere;
+}
+a:hover { color: var(--quiet); }
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+
+footer {
+  padding: 2.5rem 1.25rem 3rem;
+  text-align: center; font-size: 1rem; line-height: 1.5; color: var(--quiet); text-wrap: balance;
+}
+footer p + p { margin-top: .25rem; }
+
